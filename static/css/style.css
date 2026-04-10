@@ -451,6 +451,28 @@ footer {
   color: rgba(232, 230, 224, 0.5);
 }
 
+dialog {
+  background-color: #0c0c0e;
+  border: solid blue 1px;
+  border-left: solid blue 8px;
+}
+
+.detailsbtn {
+  display: flex;
+  float: right;
+  padding: 0;
+  border: solid white 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.closebtn {
+  display: flex;
+  float: right;
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+  border: solid rgba(255, 255, 255, 0);
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 0 20px;
