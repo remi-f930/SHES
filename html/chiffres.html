@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>IA et société</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="arguments.html">Arguments</a></li>
+                <li><a href="actu.html">Actualités</a></li>
+                <li><a href="chiffres.html" class="active">chiffres clés</a></li>
+                <li><a href="profils.html">Profils</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Chiffres clés</h1>
+
+    <main>
+
+        <p class="hero-description">
+            Données quantitatives sur l'intelligence artificielle : marché, emploi, adoption et usages sociétaux.
+        </p>
+
+        <div class="kpi-grid">
+            <div class="kpi accent">
+                <div class="kpi-label">Marché mondial IA</div>
+                <div class="kpi-value">$391Md</div>
+                <div class="kpi-sub">en 2025</div>
+            </div>
+            <div class="kpi green">
+                <div class="kpi-label">Emplois boostés par l'IA</div>
+                <div class="kpi-value">+25%</div>
+                <div class="kpi-sub">de salaires en plus (PwC 2025)</div>
+            </div>
+            <div class="kpi red">
+                <div class="kpi-label">Emplois exposés</div>
+                <div class="kpi-value">300M</div>
+                <div class="kpi-sub">postes à risque (Goldman Sachs)</div>
+            </div>
+            <div class="kpi blue">
+                <div class="kpi-label">Utilisateurs ChatGPT</div>
+                <div class="kpi-value">400M</div>
+                <div class="kpi-sub">actifs hebdomadaires, 2025</div>
+            </div>
+            <div class="kpi accent">
+                <div class="kpi-label">Émissions CO₂ IA</div>
+                <div class="kpi-value">~4%</div>
+                <div class="kpi-sub">du total numérique mondial</div>
+            </div>
+            <div class="kpi green">
+                <div class="kpi-label">Gains de productivité</div>
+                <div class="kpi-value">+40%</div>
+                <div class="kpi-sub">sur tâches cognitives (MIT)</div>
+            </div>
+        </div>
+
+        <p class="section-label">✦ Croissance et marché</p>
+
+        <div class="charts-row">
+            <div class="chart-card">
+                <div class="chart-title">Marché mondial de l'IA (Mds $)</div>
+                <div class="chart-source">Source : Statista / Grand View Research, 2025</div>
+                <div class="chart-wrap">
+                    <canvas id="marketChart" role="img"
+                        aria-label="Courbe de croissance du marché mondial de l'IA de 2020 à 2030">
+                        Croissance estimée : 50Md$ en 2020, 391Md$ en 2025, 1 800Md$ prévu en 2030.
+                    </canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Investissements IA par région (2024)</div>
+                <div class="chart-source">Source : OCDE, 2024</div>
+                <div class="chart-legend">
+                    <span><span class="legend-dot" style="background:#e8c97a;"></span>États-Unis</span>
+                    <span><span class="legend-dot" style="background:#4ade80;"></span>Chine</span>
+                    <span><span class="legend-dot" style="background:#60a5fa;"></span>Europe</span>
+                    <span><span class="legend-dot" style="background:#f87171;"></span>Reste du monde</span>
+                </div>
+                <div class="chart-wrap chart-wrap--sm">
+                    <canvas id="regionChart" role="img" aria-label="Donut des investissements IA par région en 2024">
+                        États-Unis 47%, Chine 25%, Europe 17%, Reste du monde 11%.
+                    </canvas>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="section-label">✦ Impact sur l'emploi</p>
+
+        <div class="chart-card">
+            <div class="chart-title">Secteurs les plus exposés à l'automatisation par l'IA (%)</div>
+            <div class="chart-source">Source : McKinsey Global Institute, 2024 — part des tâches automatisables</div>
+            <div class="chart-wrap chart-wrap--lg">
+                <canvas id="secteurChart" role="img"
+                    aria-label="Barres horizontales des secteurs exposés à l'automatisation">
+                    Finance 54%, Logistique 52%, Service client 46%, Santé 36%, Éducation 27%, Construction 18%.
+                </canvas>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="section-label">✦ Adoption et usages</p>
+
+        <div class="charts-row">
+            <div class="chart-card">
+                <div class="chart-title">Adoption de l'IA en entreprise (France)</div>
+                <div class="chart-source">Source : Bpifrance, 2024</div>
+                <div class="chart-wrap">
+                    <canvas id="adoptionChart" role="img"
+                        aria-label="Histogramme de l'adoption de l'IA en entreprise en France de 2021 à 2024">
+                        Adoption : 8% en 2021, 15% en 2022, 23% en 2023, 34% en 2024.
+                    </canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Usages de l'IA au quotidien</div>
+                <div class="chart-source">Source : Eurobarometer, 2024 — adultes européens</div>
+                <div class="chart-legend">
+                    <span><span class="legend-dot" style="background:#e8c97a;"></span>Assez souvent</span>
+                    <span><span class="legend-dot" style="background:#60a5fa;"></span>Rarement</span>
+                    <span><span class="legend-dot" style="background:#4ade80;"></span>Jamais</span>
+                </div>
+                <div class="chart-wrap chart-wrap--sm">
+                    <canvas id="usageChart" role="img"
+                        aria-label="Donut de la fréquence d'usage de l'IA chez les adultes européens">
+                        Usage IA : 34% assez souvent, 28% rarement, 38% jamais.
+                    </canvas>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        FICANO R. - DUBOIS V.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="../js/chiffres.js"></script>
+
+</body>
+
+</html>
