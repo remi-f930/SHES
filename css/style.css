@@ -628,7 +628,12 @@ dialog p {
   height: 300px;
 }
 
-/* ─────────────────────────────────────────────────────────── */
+#ia_img{
+  position: absolute;
+  right: 0;
+  width: 20%;
+  z-index: -2;
+}
 
 @media (max-width: 768px) {
   nav {
