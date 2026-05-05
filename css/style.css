@@ -647,8 +647,9 @@ dialog p {
   z-index: -2;
 }
 
-html:has(dialog:open) {
+body:has(dialog:open) {
   filter: blur(3.5px);
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
